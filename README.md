@@ -11,3 +11,14 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+
+```shell
+mkdir frontend
+cd frontend
+npm create vite@latest . -- --template react-ts
+npm install
+npm install -D tailwindcss postcss autoprefixer
+npm install -D @tailwindcss/postcss
+npm install -g tailwindcss && tailwindcss init -p
+npm install ethers wagmi viem @tanstack/react-query
+```
